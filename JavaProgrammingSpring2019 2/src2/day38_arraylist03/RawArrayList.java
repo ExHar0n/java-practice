@@ -1,0 +1,17 @@
+package day38_arraylist03;
+
+import java.util.ArrayList;
+
+public class RawArrayList {
+
+	public static void main(String[] args) {
+		
+		ArrayList list = new ArrayList();
+		list.add("Saturday");
+		list.add("Java day");
+		list.add(1000);
+		list.add(45.50);
+
+	}
+
+}
