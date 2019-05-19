@@ -2,28 +2,34 @@ package day04_primitives_operators;
 
 public class StringsConcat {
 	public static void main(String[] args) {
-		String firstName = "Alex";
-		System.out.println("my name is " + firstName);
-		String city = "zp";
-		System.out.println("I was born in " + city + " city");
+		//string variable called firstName and assign your firstname
+		String firstName = "Murodil";
+		//My name is Murodil
+		System.out.println("My Name is " + firstName );
+		
+		//city variable and assign city where you are from
+		String city = "Andijan";
+		//Print: I was born in 
+		System.out.println("I was born in " + city);
+		
+		//Create a var: job and assign SDET to it
+		//Create a var: company and assign any company
+		//Print: I work as <SDET> in <company>
 		
 		String job = "SDET";
-		String company = "Apple";
-		System.out.println("I work as " + job + " in " + company);
-	
-		int zipcode = 22310;
-		System.out.println("I live in " + zipcode + " zipcode");
+		String company = "Google";
+		System.out.println("I work as "+job+" in "+company);
 		
-		String city1, city2, city3;
-		city1 = "Moscow";
-		city2 = "Tashkent";
-		city3 = "Kyiv";
+		//create int variable zipcode and assign zipcode of your home
+		//Print: I live in <22031> zipcode
 		
-		System.out.println("From " + city2 + " to " + city3 + " is 500$");
-		System.out.println("From " + city1 + " to " + city2 + " is 550$");
-		System.out.println("I have been to " + city2 + ", " + city1 + ", " + city3);
+		int zipcode = 22031;
+		System.out.println("I live in "+ zipcode + " zipcode");
 		
-		String app = "Slack";
-		System.out.println("We use " + app + " for messaging with Classmates");
+		int num1 = 10;
+		int num2 = 20;
+		
+		System.out.println(num1+""+num2); //1020
+		
 	}
 }

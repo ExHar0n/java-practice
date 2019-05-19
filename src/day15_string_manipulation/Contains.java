@@ -1,45 +1,55 @@
 package day15_string_manipulation;
 
 public class Contains {
-
 	public static void main(String[] args) {
-
 		String email = "test@gmail.com";
-		System.out.println(email.contains("@"));
-
-		String list = "potatoes, apples, tomatoes, eggs, milk, bread, cereal, meat";
-		if (list.contains("apples")) {
+		System.out.println( email.contains("@") );
+		
+		String list = "potatoes, tomatoes, eggs, milk, bread, cereal, meat, apples";
+		//check if apples is in the shopping list
+		//true ==> Apples are there!
+		//false ==> Lets add apples now!
+		
+		if(list.contains("apples")) {
 			System.out.println("Apples are there!");
-		} else {
-			System.out.println("Let's add apples now.");
+		}else {
+			System.out.println("Lets Add apples now!");
 		}
-		boolean hasEggs = list.toLowerCase().contains("eggs");
-		System.out.println("Contains eggs: " + hasEggs);
-		boolean hasCucumbers = list.contains("cucumbers");
+		
+		boolean hasEggs = list.contains("eggs");
+		
+		System.out.println("Contains eggs: "+hasEggs);
+		
+		boolean hasCucumbers = list.toLowerCase().contains("cucumbers");
+		
 		System.out.println("Contains cucumbers: " + hasCucumbers);
-
-		email = "name@gmail.com";
-
-		if (email.contains("@yahoo")) {
+		
+		email = "name@yahoo.com";
+		
+		if(email.contains("@yahoo")) {
 			System.out.println("Yahoo account");
-		} else if (email.contains("@gmail")) {
+		}else if(email.contains("@gmail")) {
 			System.out.println("Gmail account");
-		} else if (email.contains("@hotmail")) {
+		}else if(email.contains("@hotmail")) {
 			System.out.println("Hotmail account");
 		}
 		
 		String etsyTitle = "Wooden spoon | Etsy";
-		if(etsyTitle.contains(" | ")) {
+		if(etsyTitle.contains(" | ") ) {
 			System.out.println("Pipe is there as expected");
 		}else {
 			System.out.println("Pipe is not detected");
 		}
 		
-		String name = "Alex";
-		if(name.contains("a") || name.contains("e")) {
-			System.out.println("Yeah, 'a' or 'e' is present");
+		String str = " | ";
+		System.out.println(etsyTitle.contains(str));
+		
+		//Assign your name and check it contains "a" or "e" letters
+		String name = "Alexander";
+		if(name.contains("a") || name.toLowerCase().contains("e")) {
+			System.out.println("'a' or 'e' is present");
 		}else {
-			System.out.println("No, 'a' or 'e' is not present");
+			System.out.println("'a' or 'e' is missing");
 		}
 
 	}

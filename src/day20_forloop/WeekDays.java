@@ -1,37 +1,40 @@
 package day20_forloop;
 
 public class WeekDays {
-
 	public static void main(String[] args) {
-		
-		for(int i = 1; i <= 7; i++) {
-			switch(i) {
+		//FOR LOOP: 1-7
+		//1 - Monday
+		//2 - Tuesday
+		for(int day = 1; day <= 7; day++) {
+			switch(day) {
 			case 1:
-				System.out.println("Monday");
+				System.out.println(day + " - Monday");
 				break;
 			case 2:
-				System.out.println("Tuesday");
+				System.out.println(day + " - Tuesday");
 				break;
 			case 3:
-				System.out.println("Wednesday");
+				System.out.println(day + " - Wednesday");
 				break;
 			case 4:
-				System.out.println("Thursday");
+				System.out.println(day + " - Thursday");
 				break;
 			case 5:
-				System.out.println("Friday");
-				break;
+				System.out.println(day + " - Friday");
+				break;	
 			case 6:
-				System.out.println("Saturday");
-				break;
+				System.out.println(day + " - Saturday");
+				break;	
 			case 7:
-				System.out.println("Sunday");
+				System.out.println(day + " - Sunday");
 				break;
-				default:
-					System.out.println("Invalid day");
+			default:
+				System.out.println("Invalid day");
 			}
 		}
-
+		
+		
 	}
-
 }
+
+

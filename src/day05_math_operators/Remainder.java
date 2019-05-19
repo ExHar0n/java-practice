@@ -1,10 +1,9 @@
 package day05_math_operators;
 
 public class Remainder {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		// REMAINDER Operator
+		System.out.println(10 % 2);
+		System.out.println(9 % 2);
 	}
-
 }

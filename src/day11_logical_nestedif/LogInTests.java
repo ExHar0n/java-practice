@@ -1,29 +1,30 @@
 package day11_logical_nestedif;
 
-import java.util.Scanner;
+import java.util.*;
 
-public class LogInTests {
+public class LoginTests {
 
 	public static void main(String[] args) {
-
 		Scanner scan = new Scanner(System.in);
-		String username, password;
-		String validUsername = "Ex-Har0n@yandex.com";
+
+		System.out.println("Enter username:");
+		String username = scan.next();
+
+		System.out.println("Enter password:");
+		String password = scan.next();
+
+		String validUsername = "cybertek@mail.com";
 		String validPassword = "WoodenSpoon123";
-		System.out.println("Enter your username");
-
-		username = scan.nextLine();
-		System.out.println("Enter your password");
-		password = scan.nextLine();
+		// username = "cybertek12@mail.com"
+		// password = "aber324"
 		if (username.equalsIgnoreCase(validUsername) && password.equals(validPassword)) {
-			System.out.println("Login Successfull, Welcome!");
+			System.out.println("Login Successful, Welcome!");
 		} else if (!username.equalsIgnoreCase(validUsername) && !password.equals(validPassword)) {
-			System.out.println("Invalid username and invalid password");
-		} else if (!validUsername.equals(username) && password.equals(validPassword)) {
-			System.out.println("Invalid username ");
+			System.out.println("Invalid Username and Invalid Password");
 		} else if (username.equalsIgnoreCase(validUsername) && !password.equals(validPassword)) {
-			System.out.println("Invalid password");
-
+			System.out.println("Invalid Password");
+		} else if (!username.equalsIgnoreCase(validUsername) && password.equals(validPassword)) {
+			System.out.println("Invalid Username");
 		}
 
 	}
